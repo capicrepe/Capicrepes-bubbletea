@@ -25,7 +25,7 @@
     h1 {
       color: #0b0b0b;
       animation: aparecer 2s ease;
-       font-size: 3em;
+       font-size: 2em;
         text-shadow: 
     -1px -1px 0 #ffffff,  
     1px -1px 0 #fffdfd,  
@@ -43,15 +43,15 @@
       animation: aparecer 1.5s ease;
     }
     a {
-      color: #625dee;
+      color: #f29304;
       text-decoration: none;
       font-weight: bold;
       transition: transform 0.3s;
        text-shadow: 
-    -1px -1px 0 #ffffff,  
-    1px -1px 0 #ffffff,  
-    -1px 1px 0 #ffffff,  
-    1px 1px 0 #ffffff; 
+    -1px -1px 0 #3e398889,  
+    1px -1px 0 #c4bef6,  
+    -1px 1px 0 #f6e4be00,  
+    1px 1px 0 #f6e4bee0; 
     }
     a:hover {
       transform: scale(1.1);
@@ -118,21 +118,35 @@
       background: rgba(255, 253, 248, 0.25);
     }
     .sub-opciones li {
-      display: flex;
-      flex-direction: column;
-      font-size: 0.85em;
-      color: #ffffff;
-      margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85em;
+    color: #ffffff;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
     }
-    .emoji {
-      margin-left: 5px;
-    }
+    
+   .sub-opciones li span {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+   
+    
     small {
-      color: #f9f3df;
+      color: #e2ddcc;
       font-style: italic;
-      margin-top: 4px;
+      margin-top: 2px;
       display: block;
+      list-style: none;
+      font-size: 0.75em;
     }
+    
+
+
  
     @keyframes rebote {
       0% { transform: scale(1); }
@@ -184,22 +198,22 @@
     /* Botón flotante volver arriba */
     #btn-volver-arriba {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #00bcd4;
+      bottom: 10px;
+      right: 10px;
+      background-color: #7e720700;
       border: none;
       border-radius: 50%;
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 40px;
       color: white;
-      font-size: 28px;
+      font-size: 20px;
       cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 2px rgba(121, 72, 8, 0.686);
       transition: background-color 0.3s;
       z-index: 1000;
     }
     #btn-volver-arriba:hover {
-      background-color: #0288d1;
+      background-color: #a7750b;
     }
     /* Contenedor botones menú para centrar 2 botones arriba y 1 abajo */
     .botones-menu {
@@ -234,16 +248,17 @@
       background-color: #0288d1;
       animation: rebote 0.5s;
     }
+    
   </style>
 </head>
 <body>
   <h1>Hola Capi amigo, ¿Que Tal?</h1>
   <p>¡Bienvenido a Capi Crepes & Bubble Tea!</p>
-  <p>¿Quieres darte un gusto? 😏</p>
+  <p>¿Quieres darte un gusto?</p>
 
   <img src="crepes.jpg" alt="Deliciosos crepes" />
 
-  <p>Haz tu <a href="https://wa.link/4kdn3q" target="_blank">pedido aquí</a> 👌😋</p>
+  <p>Haz tu <a href="https://wa.link/4kdn3q" target="_blank">pedido aquí</a> ⬅️👌</p>
   <p> <a href="https://maps.app.goo.gl/vDd58rnaHtdLeWVM6" target="_blank">¿Como llegar?</a> </p>
 
   <h2>Menú</h2>
@@ -265,35 +280,36 @@
         <li><strong>CREPES</strong>
           <ul class="sub-opciones">
             <li>
-              <span> Basic (chocolate, fresa, banano) <span class="emoji">🥞</span></span>
+             
+              <span> Basic (chocolate, fresa, banano) </span>   
               <small>Crepe con cobertura de chocolate, fresa y rodajas de banano.</small>
             </li>
             <li>
-              <span> Basic con Helado <span class="emoji">🍨</span></span>
+              <span> Basic con Helado </span>  
               <small>Crepe básico acompañado con helado de vainilla.</small>
             </li>
             <li>
-              <span> Oreo con Helado <span class="emoji">🍪</span></span>
+              <span> Oreo con Helado </span> 
               <small>Crepe con trozos de galleta Oreo y helado.</small>
             </li>
             <li>
-              <span> Nutella y Almendras <span class="emoji">🍫</span></span>
+              <span> Nutella y Almendras </span> 
               <small>Crepe con crema de Nutella y almendras tostadas.</small>
             </li>
             <li>
-              <span> Capi Crepes <span class="emoji">💛</span></span>
+              <span> Capi Crepes </span> 
               <small>Especialidad de la casa con frutas frescas y toppings variados.</small>
             </li>
             <li>
-              <span> Nutella Fruit <span class="emoji">🍓</span></span>
+              <span> Nutella Fruit </span> 
               <small>Crepe con Nutella y fresas frescas.</small>
             </li>
             <li>
-              <span> Mocoloco <span class="emoji">🍌</span></span>
-              <small>Crepe con banano y dulce de leche.</small>
+              <span> Mocoloco </span>  
+              <small>Crepe con queso crema y mermelada de mora.</small>
             </li>
             <li>
-              <span>Extras: Nutella, Helado, Chantilly, Oreo, Almendras <span class="emoji">✨</span></span>
+              <span>Extras: Nutella, Helado, Chantilly, Oreo, Almendras </span> 
               <small>Agrega cualquiera de estos toppings a tu crepe.</small>
             </li>
           </ul>
@@ -301,27 +317,27 @@
         <li><strong>BUBBLE TEA</strong>
           <ul class="sub-opciones">
             <li>
-              <span> Chocolate <span class="emoji">🍫</span></span>
+              <span> Chocolate </span> 
               <small>Té con sabor a chocolate y perlas de tapioca.</small>
             </li>
             <li>
-              <span> Nutella <span class="emoji">🍩</span></span>
+              <span> Nutella </span> 
               <small>Té con crema de Nutella y tapioca.</small>
             </li>
             <li>
-              <span> Frappuccino <span class="emoji">🥶</span></span>
+              <span> Frappuccino </span> 
               <small>Bebida fría estilo frappuccino con té y leche.</small>
             </li>
             <li>
-              <span> Manjar <span class="emoji">🍮</span></span>
+              <span> Manjar </span> 
               <small>Té con sabor a manjar blanco y tapioca.</small>
             </li>
             <li>
-              <span> Soda de Frutas <span class="emoji">🫧</span></span>
+              <span> Soda de Frutas </span> 
               <small>Refresco con esencia de frutas y burbujas.</small>
             </li>
             <li>
-              <span> Fresa <span class="emoji">🍓</span></span>
+              <span> Fresa </span> 
               <small>Té con sabor a fresa natural y tapioca.</small>
             </li>
           </ul>
@@ -329,11 +345,11 @@
         <li><strong>FRESAS CON CREMA</strong>
           <ul class="sub-opciones">
             <li>
-              <span> Fresas con Crema <span class="emoji">🍓</span></span>
+              <span> Fresas con Crema </span> 
               <small>Fresas frescas con crema batida.</small>
             </li>
             <li>
-              <span> Fresas con Crema y Nutella <span class="emoji">🍓🍫</span></span>
+              <span> Fresas con Crema y Nutella </span> 
               <small>Fresas con crema y Nutella.</small>
             </li>
           </ul>
@@ -341,23 +357,23 @@
         <li><strong>BEBIDAS CALIENTES</strong>
           <ul class="sub-opciones">
             <li>
-              <span>Café Americano <span class="emoji">☕</span></span>
+              <span>Café Americano </span> 
               <small>Café negro tradicional.</small>
             </li>
             <li>
-              <span>Capuccino <span class="emoji">🧋</span></span>
+              <span>Capuccino </span> 
               <small>Café espresso con leche y espuma.</small>
             </li>
             <li>
-              <span>Mocaccino <span class="emoji">🍫</span></span>
+              <span>Mocaccino </span> 
               <small>Café con chocolate y leche espumosa.</small>
             </li>
             <li>
-              <span>Chocolate Caliente <span class="emoji">🍫</span></span>
+              <span>Chocolate Caliente </span> 
               <small>Chocolate caliente cremoso.</small>
             </li>
             <li>
-              <span>Té de Sabores <span class="emoji">🍵</span></span>
+              <span>Té de Sabores </span> 
               <small>Variedad de tés aromáticos.</small>
             </li>
           </ul>
@@ -370,57 +386,126 @@
       <ul>
         <li><strong>EMPANADAS</strong>
           <ul class="sub-opciones">
-            <li><span>Carne Mechada <span class="emoji">🥩</span></span></li>
-            <li><span>Carne Molida <span class="emoji">🍖</span></span></li>
-            <li><span>Pollo <span class="emoji">🍗</span></span></li>
-            <li><span>Jamón y Queso <span class="emoji">🧀</span></span></li>
-            <li><span>Pabellón <span class="emoji">🇻🇪</span></span></li>
-            <li><span>Cordón Bleu <span class="emoji">🥖</span></span></li>
-            <li><span>Albacora (Cazón) <span class="emoji">🐟</span></span></li>
+            <li>
+            <span> Carne Mechada </span> 
+             <small>Carne de Res Mechada con Ensalada de Col y Zanahoria</small>
+            </li>
+            <li>
+            <span> Carne Molida </span> 
+             <small>Carne de Res Molida con Ensalada de Col y Zanahoria.</small>
+            </li>
+            <li>
+            <span> Pollo </span> 
+             <small>Pollo Mechado con Ensalada de Col y Zanahoria.</small>
+            </li>
+            <li>
+            <span> Jamón y Queso </span> 
+             <small>Jamon, queso Manaba y Ensalada de Col y Zanahoria.</small>
+            </li>
+            <li>
+            <span> Pabellón </span> 
+             <small>Carne mechada, Frejol Negro, Queso y Maduro Frito .</small>
+            </li>
+            <li>
+            <span> Cordón Bleu </span> 
+             <small>Pollo Mechado, Queso Manaba y Jamon.</small>
+            </li>
+            <li>
+            <span> Albacora (Cazón) </span> 
+             <small>Pescado Desmenuzado.</small>
+            </li>
+          
           </ul>
         </li>
         <li><strong>AREPAS</strong>
            <ul class="sub-opciones">
-            <li><span>Carne Mechada <span class="emoji">🥩</span></span></li>
-            <li><span>Carne Molida <span class="emoji">🍖</span></span></li>
-            <li><span>Pollo <span class="emoji">🍗</span></span></li>
-            <li><span>Jamón y Queso <span class="emoji">🧀</span></span></li>
-            <li><span>Pabellón <span class="emoji">🇻🇪</span></span></li>
-            <li><span>Cordón Bleu <span class="emoji">🥖</span></span></li>
-            <li><span>Albacora (Cazón) <span class="emoji">🐟</span></span></li>
+            <li>
+            <span>Carne Mechada </span> 
+             <small>Carne de Res Mechada con Ensalada de Col y Zanahoria</small>
+            </li>
+            <li>
+            <span>Carne Molida </span> 
+             <small>Carne de Res Molida con Ensalada de Col y Zanahoria.</small>
+            </li>
+            <li>
+            <span>Pollo </span> 
+             <small>Pollo Mechado con Ensalada de Col y Zanahoria.</small>
+            </li>
+            <li>
+            <span> Jamón y Queso </span> 
+             <small>Jamon, queso Manaba y Ensalada de Col y Zanahoria.</small>
+            </li>
+            <li>
+            <span> Pabellón </span> 
+             <small>Carne mechada, Frejol Negro, Queso y Maduro Frito .</small>
+            </li>
+            <li>
+            <span> Cordón Bleu </span> 
+             <small>Pollo Mechado, Queso Manaba y Jamon.</small>
+            </li>
+            <li>
+            <span> Albacora (Cazón) </span> 
+             <small>Pescado Desmenuzado.</small>
+            </li>
+          
           </ul>
         </li>
+         <li><strong>PAPAS RELLENAS</strong>
+          <ul class="sub-opciones">
+            <span> Papa Rellena </span> 
+             <small>Papa, Huevo Cocido y Carne Molida.</small>
+            </li>
+            </ul>
         <li><strong>PAPAS</strong>
           <ul class="sub-opciones">
-            <li><span>Salchipapas <span class="emoji">🍟</span></span></li>
-            <li><span>Salchipapitas <span class="emoji">🍟</span></span></li>
-            <li><span>Choripapas <span class="emoji">🌭</span></span></li>
+            <span> Salchipapas </span> 
+             <small>Papa, Salchicha de Pollo o Carne, Ensalada y Salsas.</small>
+            </li>
+            <li>
+            <span> Papicarne </span> 
+             <small>Papa, Carne de hamburguesa, Ensalada y Salsas.</small>
+            </li>
+            <li>
+            <span> Choripapas </span> 
+             <small>Papa, Chorizo, Ensalada y Salsas.</small>
+            </li>
+            <li>
           </ul>
         </li>
         <li><strong>HOTDOG</strong>
           <ul class="sub-opciones">
-            <li><span>Hotdog Clásico <span class="emoji">🌭</span></span></li>
+            <span> Hotdog Clásico </span> 
+             <small>Pan, Salchicha de Pollo o Carne, Ensalada, Papitas y Queso Manaba.</small>
+            </li>
+            <li>
           </ul>
         </li>
         <li><strong>HAMBURGUESA</strong>
           <ul class="sub-opciones">
-            <li><span>Hamburguesa <span class="emoji">🍔</span></span></li>
-            <li><span>Doble Carne <span class="emoji">🍔</span></span></li>
+            <span> Basica </span> 
+             <small>Pan, Carne de Hamburguesa, Queso Cheddar y Porcion de Papas.</small>
+            </li>
+            <li>
+            <span> Doble Carne </span> 
+             <small>Pan, Doble Carne de Hamburguesa, Queso Cheddary Porcion de Papa.</small>
+            </li>
+            <li>
           </ul>
         </li>
         <li><strong>BEBIDAS FRÍAS</strong>
           <ul class="sub-opciones">
-            <li><span>Jugos Naturales <span class="emoji">🧃</span></span></li>
-            <li><span>Batidos con Leche <span class="emoji">🥤</span></span></li>
-            <li><span>Gaseosas <span class="emoji">🥤</span></span></li>
+            <span> Jugos Naturales </span> 
+             <small>Maracuya, Guanabana Y Mora.</small>
+            </li>
+            <li>
+            <span> Batidos con Leche </span> 
+             <small>Maracuya, Guanabana Y Mora.</small>
+            </li>
+            <li>
+            <span> Gaseosas </span> 
           </ul>
         </li>
-        <li><strong>BEBIDAS CALIENTES</strong>
-          <ul class="sub-opciones">
-            <li><span>Café Negro <span class="emoji">☕</span></span></li>
-            <li><span>Café con Leche <span class="emoji">🥛</span></span></li>
-          </ul>
-        </li>
+        
       </ul>
     </div>
 
@@ -432,11 +517,13 @@
         <img src="producto2.jpg" alt="Producto 2" />
         <img src="producto3.jpg" alt="Producto 3" />
         <img src="producto4.jpg" alt="Producto 4" />
+        <img src="producto5.jpeg" alt="Producto 5" />
+        <img src="producto6.png" alt="Producto 6" />
         <!-- Agrega o quita imágenes según tu necesidad -->
       </div>
     </div>
   </div>
-   <p>Visítanos en nuestro <a href="https://www.instagram.com/capicrepes.uio" target="_blank">Instagram</a></p>
+   <p>Visítanos en <a href="https://www.instagram.com/capicrepes.uio" target="_blank">Instagram</a></p>
 
   <button id="btn-volver-arriba" title="Volver arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8679;</button>
 
