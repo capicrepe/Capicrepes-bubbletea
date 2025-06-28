@@ -6,7 +6,7 @@
   <title>Capi Crepes & Bubble Tea</title>
   <style>
     body {
-      background: linear-gradient(270deg, #8d4302, #a88213, #7b480f);
+      background: linear-gradient(1000deg, #d66f16, #845c05, #a66317);
       background-size: 600% 600%;
       animation: fondoMovil 15s ease infinite;
       font-family: 'Arial', sans-serif;
@@ -23,18 +23,35 @@
       100% { background-position: 0% 50%; }
     }
     h1 {
-      color: #39350f;
-      animation: aparecer 1s ease;
+      color: #0b0b0b;
+      animation: aparecer 2s ease;
+       font-size: 3em;
+        text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #fffdfd,  
+    -1px 1px 0 #ffffff,  
+    1px 1px 0 #ffffff; 
+    }
+    h2 {
+      color: #ffffff;
+      animation: aparecer 2s ease;
+       font-size: 2em;
+      
     }
     p {
       font-size: 1.3em;
       animation: aparecer 1.5s ease;
     }
     a {
-      color: #00bcd4;
+      color: #625dee;
       text-decoration: none;
       font-weight: bold;
       transition: transform 0.3s;
+       text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,  
+    -1px 1px 0 #ffffff,  
+    1px 1px 0 #ffffff; 
     }
     a:hover {
       transform: scale(1.1);
@@ -67,14 +84,14 @@
     }
     .menu {
       display: none;
-      margin-top: 20px;
-      animation: aparecer 0.5s ease forwards;
+      margin-top: 20px; 
+      animation: aparecer 1s ease forwards;
     }
     ul {
       list-style: none;
       padding: 0;
-      color: black;
-      background: rgba(255, 255, 255, 0.85);
+      color: rgb(255, 255, 255);
+      background: rgba(51, 35, 2, 0.95);
       display: inline-block;
       padding: 15px 25px;
       border-radius: 10px;
@@ -87,7 +104,7 @@
       line-height: 1.4;
     }
     ul li strong {
-      color: #d06c4d;
+      color: #f2f1f0;
       font-size: 1.3em;
       display: block;
       margin-bottom: 8px;
@@ -95,29 +112,28 @@
     }
     .sub-opciones {
       list-style: none;
+      font-size: 1.3em;
       padding-left: 15px;
-      margin: 0;
+      margin: 6;
+      background: rgba(255, 253, 248, 0.25);
     }
     .sub-opciones li {
       display: flex;
       flex-direction: column;
-      font-size: 0.95em;
-      color: #333;
+      font-size: 0.85em;
+      color: #ffffff;
       margin-bottom: 12px;
     }
     .emoji {
       margin-left: 5px;
     }
     small {
-      color: #555;
+      color: #f9f3df;
       font-style: italic;
       margin-top: 4px;
       display: block;
     }
-    @keyframes aparecer {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+ 
     @keyframes rebote {
       0% { transform: scale(1); }
       50% { transform: scale(1.15); }
@@ -155,7 +171,7 @@
     #productos-fotos img {
       width: 140px;
       height: 140px;
-      margin: 10px;
+      margin: 5px;
       border-radius: 12px;
       object-fit: cover;
       box-shadow: 0 0 8px rgba(0,0,0,0.3);
@@ -221,16 +237,17 @@
   </style>
 </head>
 <body>
-  <h1>Hola Capi amigo, ¿cómo estás?</h1>
+  <h1>Hola Capi amigo, ¿Que Tal?</h1>
   <p>¡Bienvenido a Capi Crepes & Bubble Tea!</p>
   <p>¿Quieres darte un gusto? 😏</p>
 
   <img src="crepes.jpg" alt="Deliciosos crepes" />
 
-  <p>Visítanos en nuestro <a href="https://www.instagram.com/capicrepes.uio" target="_blank">Instagram</a></p>
   <p>Haz tu <a href="https://wa.link/4kdn3q" target="_blank">pedido aquí</a> 👌😋</p>
+  <p> <a href="https://maps.app.goo.gl/vDd58rnaHtdLeWVM6" target="_blank">¿Como llegar?</a> </p>
 
   <h2>Menú</h2>
+  
 
   <div class="botones-menu">
     <button onclick="mostrarMenu('dulce')">Menú Dulce</button>
@@ -248,31 +265,31 @@
         <li><strong>CREPES</strong>
           <ul class="sub-opciones">
             <li>
-              <span>C1. Basic (chocolate, fresa, banano) <span class="emoji">🥞</span></span>
+              <span> Basic (chocolate, fresa, banano) <span class="emoji">🥞</span></span>
               <small>Crepe con cobertura de chocolate, fresa y rodajas de banano.</small>
             </li>
             <li>
-              <span>C2. Basic con Helado <span class="emoji">🍨</span></span>
+              <span> Basic con Helado <span class="emoji">🍨</span></span>
               <small>Crepe básico acompañado con helado de vainilla.</small>
             </li>
             <li>
-              <span>C3. Oreo con Helado <span class="emoji">🍪</span></span>
+              <span> Oreo con Helado <span class="emoji">🍪</span></span>
               <small>Crepe con trozos de galleta Oreo y helado.</small>
             </li>
             <li>
-              <span>C4. Nutella y Almendras <span class="emoji">🍫</span></span>
+              <span> Nutella y Almendras <span class="emoji">🍫</span></span>
               <small>Crepe con crema de Nutella y almendras tostadas.</small>
             </li>
             <li>
-              <span>C5. Capi Crepes <span class="emoji">💛</span></span>
+              <span> Capi Crepes <span class="emoji">💛</span></span>
               <small>Especialidad de la casa con frutas frescas y toppings variados.</small>
             </li>
             <li>
-              <span>C6. Nutella Fruit <span class="emoji">🍓</span></span>
+              <span> Nutella Fruit <span class="emoji">🍓</span></span>
               <small>Crepe con Nutella y fresas frescas.</small>
             </li>
             <li>
-              <span>C7. Mocoloco <span class="emoji">🍌</span></span>
+              <span> Mocoloco <span class="emoji">🍌</span></span>
               <small>Crepe con banano y dulce de leche.</small>
             </li>
             <li>
@@ -284,27 +301,27 @@
         <li><strong>BUBBLE TEA</strong>
           <ul class="sub-opciones">
             <li>
-              <span>B1. Chocolate <span class="emoji">🍫</span></span>
+              <span> Chocolate <span class="emoji">🍫</span></span>
               <small>Té con sabor a chocolate y perlas de tapioca.</small>
             </li>
             <li>
-              <span>B2. Nutella <span class="emoji">🍩</span></span>
+              <span> Nutella <span class="emoji">🍩</span></span>
               <small>Té con crema de Nutella y tapioca.</small>
             </li>
             <li>
-              <span>B3. Frappuccino <span class="emoji">🥶</span></span>
+              <span> Frappuccino <span class="emoji">🥶</span></span>
               <small>Bebida fría estilo frappuccino con té y leche.</small>
             </li>
             <li>
-              <span>B4. Manjar <span class="emoji">🍮</span></span>
+              <span> Manjar <span class="emoji">🍮</span></span>
               <small>Té con sabor a manjar blanco y tapioca.</small>
             </li>
             <li>
-              <span>B5. Soda de Frutas <span class="emoji">🫧</span></span>
+              <span> Soda de Frutas <span class="emoji">🫧</span></span>
               <small>Refresco con esencia de frutas y burbujas.</small>
             </li>
             <li>
-              <span>B6. Fresa <span class="emoji">🍓</span></span>
+              <span> Fresa <span class="emoji">🍓</span></span>
               <small>Té con sabor a fresa natural y tapioca.</small>
             </li>
           </ul>
@@ -312,11 +329,11 @@
         <li><strong>FRESAS CON CREMA</strong>
           <ul class="sub-opciones">
             <li>
-              <span>F1. Fresas con Crema <span class="emoji">🍓</span></span>
+              <span> Fresas con Crema <span class="emoji">🍓</span></span>
               <small>Fresas frescas con crema batida.</small>
             </li>
             <li>
-              <span>F2. Fresas con Crema y Nutella <span class="emoji">🍓🍫</span></span>
+              <span> Fresas con Crema y Nutella <span class="emoji">🍓🍫</span></span>
               <small>Fresas con crema y Nutella.</small>
             </li>
           </ul>
@@ -363,8 +380,14 @@
           </ul>
         </li>
         <li><strong>AREPAS</strong>
-          <ul class="sub-opciones">
-            <li><span>Relleno a elección <span class="emoji">🫓</span></span></li>
+           <ul class="sub-opciones">
+            <li><span>Carne Mechada <span class="emoji">🥩</span></span></li>
+            <li><span>Carne Molida <span class="emoji">🍖</span></span></li>
+            <li><span>Pollo <span class="emoji">🍗</span></span></li>
+            <li><span>Jamón y Queso <span class="emoji">🧀</span></span></li>
+            <li><span>Pabellón <span class="emoji">🇻🇪</span></span></li>
+            <li><span>Cordón Bleu <span class="emoji">🥖</span></span></li>
+            <li><span>Albacora (Cazón) <span class="emoji">🐟</span></span></li>
           </ul>
         </li>
         <li><strong>PAPAS</strong>
@@ -413,28 +436,49 @@
       </div>
     </div>
   </div>
+   <p>Visítanos en nuestro <a href="https://www.instagram.com/capicrepes.uio" target="_blank">Instagram</a></p>
 
   <button id="btn-volver-arriba" title="Volver arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8679;</button>
 
   <script>
-    function mostrarMenu(tipo) {
-      const dulce = document.getElementById('menu-dulce');
-      const sal = document.getElementById('menu-sal');
-      const productos = document.getElementById('productos-fotos');
-      // Ocultar todos primero
-      dulce.style.display = 'none';
-      sal.style.display = 'none';
-      productos.style.display = 'none';
+function mostrarMenu(tipo) {
+  const dulce = document.getElementById('menu-dulce');
+  const sal = document.getElementById('menu-sal');
+  const productos = document.getElementById('productos-fotos');
 
-      if(tipo === 'dulce') {
-        dulce.style.display = 'block';
-      } else if(tipo === 'sal') {
-        sal.style.display = 'block';
-      } else if(tipo === 'productos') {
-        productos.style.display = 'block';
-      }
-    }
-  </script>
-</body>
-</html>
+  // Ocultar todos primero
+  dulce.style.display = 'none';
+  sal.style.display = 'none';
+  productos.style.display = 'none';
 
+  // Limpiar clases de animación
+  dulce.classList.remove('animar-aparicion');
+  sal.classList.remove('animar-aparicion');
+  productos.classList.remove('animar-aparicion');
+
+  let seccion = null;
+
+  if (tipo === 'dulce') {
+    dulce.style.display = 'block';
+    dulce.classList.add('animar-aparicion');
+    seccion = dulce;
+  } else if (tipo === 'sal') {
+    sal.style.display = 'block';
+    sal.classList.add('animar-aparicion');
+    seccion = sal;
+  } else if (tipo === 'productos') {
+    productos.style.display = 'block';
+    productos.classList.add('animar-aparicion');
+    seccion = productos;
+  }
+
+  // Si se va a mostrar una sección, hacemos que baje suavemente
+  if (seccion) {
+    const posicion = seccion.offsetTop - 100; // Margen de 100px
+    window.scrollTo({
+      top: posicion,
+      behavior: 'smooth'
+    });
+  }
+}
+</script>
